@@ -1,92 +1,195 @@
-# Poole
+# Monophase <!-- omit in toc -->
 
-*The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
+Monophase is *a one-column minimal responsive Jekyll blog theme*.
 
------
+One of the purposes of Monophase is to be an alternative option to the default theme of Jekyll—[Minima](https://github.com/jekyll/minima). Monophase is still keeping minimal, but meanwhile, more beautiful and mellow, and doesn't lose some useful basic features, such as archive.
 
-Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
+Check the *[live demo](https://zivlog.io/monophase/)*.
 
-![Poole](https://f.cloud.github.com/assets/98681/1834359/71ae4048-73db-11e3-9a3c-df38eb170537.png)
+![Screenshot Light](screenshot-light.png)
+![Screenshot Dark](screenshot-dark.png)
 
-See Poole in action with [the demo site](https://demo.getpoole.com).
+## Highlight Features <!-- omit in toc -->
 
-There are currently two official themes built on Poole:
+- [Normalize.css](https://github.com/necolas/normalize.css)
+- [Open Color](https://github.com/yeun/open-color)
+- [Font Awesome](https://fontawesome.com/)
+- [Disqus](https://disqus.com/)
+- [MathJax](https://www.mathjax.org/)
+- [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+- [Jekyll Feed](https://github.com/jekyll/jekyll-feed/)
+- [Jekyll Paginate](https://github.com/jekyll/jekyll-paginate)
+- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
+- Related posts (time-based, because Jekyll) below each post
+- Dark mode, via [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+- Archive implemented by pure [Liquid](https://shopify.github.io/liquid/)
 
-* [Hyde](https://hyde.getpoole.com)
-* [Lanyon](https://lanyon.getpoole.com)
+## Table of Contents <!-- omit in toc -->
 
-Individual theme feedback and bug reports should be submitted to the theme's individual repository.
-
-
-## Contents
-
+- [Installation](#installation)
 - [Usage](#usage)
+  - [Global Configuration](#global-configuration)
+  - [Post Configuration](#post-configuration)
+  - [Homepage](#homepage)
+  - [Custom Head](#custom-head)
+  - [Navigation](#navigation)
+  - [Social Links](#social-links)
+  - [Alert Messages](#alert-messages)
+  - [Alignment](#alignment)
+  - [Google Analytics 4](#google-analytics-4)
+  - [Archive](#archive)
+- [Contributing](#contributing)
 - [Development](#development)
-- [Author](#author)
 - [License](#license)
 
+## Installation
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "monophase"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: monophase
+```
+
+And then execute:
+
+```shell
+bundle
+```
+
+Or install it yourself as:
+
+```shell
+gem install monophase
+```
+
+You can also install the latest code via [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme):
+
+1. Add this line to your Jekyll site's `Gemfile`:
+
+    ```ruby
+    gem "jekyll-remote-theme"
+    ```
+
+2. Add these lines to your Jekyll site's `_config.yml`:
+
+    ```ruby
+    plugins:
+      - jekyll-remote-theme
+
+    remote_theme: zivhub/monophase@main
+    ```
 
 ## Usage
 
-### 1. Install dependencies
+### Global Configuration
 
-Poole is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem and related dependencies:
+| Variable | Type | Default | Specification |
+| -------- | ---- | ------- | ------------- |
+| `title` | String | --- | The title of the website |
+| `tagline` | String | --- | The tagline of the website |
+| `lang` | String | `en` | The language of pages; The value can be overwritten by the `lang` variable on each page |
+| `author.name` | String | --- | The name of the website author |
+| `author.url` | String | --- | A URL of the website author |
+| `tags_path` | String | --- | A path to the archive-by-tags page; It is used by tags on each post |
+| `categories_path` | String | --- | A path to the archive-by-categories page; It is used by categories on each post |
+| `disqus` | String | --- | Disqus short name |
+| `google_analytics` | String | --- | Google Analytics 4 Measurement ID |
 
-```bash
-$ gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag
+### Post Configuration
+
+| Variable | Type | Default | Specification |
+| -------- | ---- | ------- | ------------- |
+| `description` | String | --- | A description of the current post |
+| `last_modified_at` | String | --- | The date of the last modification you made on a post after its publishing |
+| `author` | String or Array | --- | The author name(s) of the post |
+| `comments` | Boolean | `true` | Does enable the Disqus comment system |
+| `math` | Boolean | `false` | Does enable MathJax on this page |
+
+### Homepage
+
+You can create a homepage for your blog by setting `layout: home` in your `index.html`.
+
+### Custom Head
+
+Monophase leaves a placeholder to allow defining custom head. All you need to do is putting data into `_includes/custom-head.html`, and they would be automatically included in `<head>`.
+
+### Navigation
+
+The navigation bar of Monophase is configurable. You just need to specify titles and URLs in the file `_data/navigation.yml`, for example,
+
+```yml
+- title: About
+  url: /about/
+- title: Archive
+  url: /archive/
+- title: Categories
+  url: /categories/
 ```
 
-**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
+### Social Links
 
-**Need syntax highlighting?** Poole includes support for Pygments or Rouge, so install your gem of choice to make use of the built-in styling. Read more about this in the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting).
+Monophase allows you to show social links on the website. All you need to do is creating a file `_data/social.yml`, for example,
 
-### 2a. Quick start
-
-To help anyone with any level of familiarity with Jekyll quickly get started, Poole includes everything you need for a basic Jekyll site. To that end, just download Poole and start up Jekyll.
-
-### 2b. Roll your own Jekyll site
-
-Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Poole and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `assets/` for CSS, JS, etc.).
-
-### 3. Running locally
-
-To see your Jekyll site with Poole applied, start a Jekyll server. In Terminal, from `/poole` (or whatever your Jekyll site's root directory is named):
-
-```bash
-$ jekyll serve
+```yml
+- title: Email
+  url: mailto:zivmsg@gmail.com
+  icon: fas fa-envelope
+- title: Twitter
+  url: https://twitter.com/zivtwt
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/zivhub
+  icon: fab fa-github
 ```
 
-Open <http://localhost:4000> in your browser, and voilà.
+### Alert Messages
 
-### 4. Serving it up
+Monophase provides some predefined classes to specify different levels of **alert messages**. In order of tone from light to heavy, they are: `message-info`, `message-warning`, and `message-danger`. You may add it to single elements like a `<p>`, or to a parent if there are multiple elements to show.
 
-If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
+### Alignment
 
-1. Fork this repo and switch to the `gh-pages` branch.
-  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
-  2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/poole`, use `http://username.github.io/poole/`. **Be sure to include the trailing slash.**
-3. Done! Head to your GitHub Pages URL or custom domain.
+Monophase also provides some predefined classes to specify the alignment of HTML elements—e.g. images. They are `align-center`, `align-left`, and `align-right`.
 
-No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
+### Google Analytics 4
+
+To enable [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en), you just need to set the [Measurement ID](https://support.google.com/analytics/answer/7372977?hl=en) in your `_config.yml`, for example,
+
+```yml
+google_analytics: G-XXXXXXX
+```
+
+### Archive
+
+Monophase provides some built-in archive pages. It is implemented in pure Liquid. If you want to archive posts by years, you can create a page and put these code in it:
+
+```yml
+---
+layout: archive
+type: years
+---
+```
+
+Similarly, if you want to archive posts by categories or tags, you can set the `type` property as `categories` or `tags`.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at [https://github.com/zivhub/monophase](https://github.com/zivhub/monophase). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
-Poole has two branches, but only one is used for active development.
+To set up your environment to develop this theme, run `bundle install`.
 
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `monophase.gemspec` accordingly.
 
 ## License
 
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
