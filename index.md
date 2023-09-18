@@ -1,21 +1,67 @@
 # Bluemarble
 
-### Submitted to ICASSP 2024 (paper number: 0000)
+### Submitted to ICASSP 2024 (paper number: 7835)
 
 ## Abstract
 
 <img src='architecture.png'>
 
 In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) system that synthesizes high-quality speech from articulatory recordings. Conventional ATS approaches are only available for high-resource datasets, which require parallel articulatory and speech signal pairs for network training. These approaches often treat acoustic feature estimation as a regression task, which can pose challenges in accurately mapping complex latent features to targets. We address this task by utilizing a finite learned codebook to limit the size of the uncertainty space.  Our model learns a mapping from electromagnetic articulography (EMA) signals to discrete speech tokens from a pretrained encoder-decoder model. Then, a decoder network utilizes the discrete EMA tokens to predict acoustic features, which are fed into a neural vocoder to synthesize speech. Experimental results show that our approach outperforms existing state-of-the-art methods in both qualitative and quantitative assessments. 
-
+;margin-left:auto;margin-right:auto;
 <!-- <audio controls><source src='./demo_sample/F01_B02_S60_R02_N.wav'></audio> -->
-<table style="width: auto; table-layout: fixed; word-wrap: normal;" borded="1" border-collapse="collapse">
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<table style="width: auto; table-layout: fixed; word-wrap: normal;margin-left:auto;margin-right:auto;" borded="1" border-collapse="collapse">
+		<tr>
+		  <td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Reference speech</strong></td>
+			<td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Baseline</strong></td>
+			<td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Bluemarble (Ours)</strong></td>
+		</tr>
+		<tr>
+		  <td><audio controls><source src='./demo_sample/F01_B02_S60_R02_N_target.wav'></audio></td>
+		  <td><audio controls><source src='./demo_sample/F01_B02_S60_R02_N.wav'></audio></td>
+		  <td><audio controls><source src='./demo_sample/F01_B02_S60_R02_N_recon.wav'></audio></td>
+		</tr>
+		<tr>
+		  <td><audio controls><source src='./demo_sample/F01_B04_S54_R01_N_target.wav'></audio></td>
+		  <td><audio controls><source src='./demo_sample/F01_B04_S54_R01_N.wav'></audio></td>
+		  <td><audio controls><source src='./demo_sample/F01_B04_S54_R01_N_recon.wav'></audio></td>
+		</tr>
+		<tr>
+		  <td><audio controls><source src='./demo_sample/F01_B05_S22_R01_F_target.wav'></audio></td>
+		  <td><audio controls><source src='./demo_sample/F01_B05_S22_R01_F.wav'></audio></td>
+		  <td><audio controls><source src='./demo_sample/F01_B05_S22_R01_F_recon.wav'></audio></td>
+		</tr>
+	</table>
+ 	<ul class="pagination justify-content-center">
+  	<li class="page-item"><a class="page-link" href="#">1</a></li>
+   	<li class="page-item"><a class="page-link" href="#">2</a></li>
+	<li class="page-item"><a class="page-link" href="#">3</a></li>
+</div>
+<!--
+<table style="width: auto; table-layout: fixed; word-wrap: normal;margin-left:auto;margin-right:auto;" borded="1" border-collapse="collapse">
 <tr>
   <td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Reference speech</strong></td>
 	<td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Baseline</strong></td>
 	<td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Bluemarble (Ours)</strong></td>
 </tr>
-
 <tr>
   <td><audio controls><source src='./demo_sample/F01_B02_S60_R02_N_target.wav'></audio></td>
   <td><audio controls><source src='./demo_sample/F01_B02_S60_R02_N.wav'></audio></td>
@@ -204,5 +250,6 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
 <tr>
   <td><audio controls><source src='./demo_sample/M04_B05_S39_R01_N_target.wav'></audio></td>
   <td><audio controls><source src='./demo_sample/M04_B05_S39_R01_N.wav'></audio></td>
+-->
   <td><audio controls><source src='./demo_sample/M04_B05_S39_R01_N_recon.wav'></audio></td>
 </tr>
