@@ -28,7 +28,7 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
 </nav>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-	<table style="width: auto; table-layout: fixed; word-wrap: normal;margin-left:auto;margin-right:auto;" borded="1" border-collapse="collapse">
+	<table style="width: auto; table-layout: fixed; word-wrap: normal;" borded="1" border-collapse="collapse">
 		<tr>
 		  <td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Reference speech</strong></td>
 			<td style="column-width: 600px; padding-left: 10px; padding-right: 10px"><strong>Baseline</strong></td>
