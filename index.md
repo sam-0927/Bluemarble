@@ -10,19 +10,11 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
 
 ## Sample
 
-[10]: "An improved model for voicing silent speech" in ACL, 2021 <br>
-[11]: “Deep speech synthesis from articulatory representations” in INTERSPEECH, 2022 <br>
-[12]: “Style modeling for multispeaker articulation-to-speech” in ICASSP, 2023 <br>
+10: "An improved model for voicing silent speech" in ACL, 2021 <br>
+11: “Deep speech synthesis from articulatory representations” in INTERSPEECH, 2022 <br>
+12: “Style modeling for multispeaker articulation-to-speech” in ICASSP, 2023 <br>
 
-<!-- <audio controls><source src='./demo_sample/F01_B02_S60_R02_N.wav'></audio> -->
-<!-- <table style="width: auto; table-layout: fixed; word-wrap: normal; text-align: center;" borded="1" border-collapse="collapse"> 
-<tr>
-  <td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>Reference</strong></td>
-	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>[10]</strong></td>
-	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>[11]</strong></td>
-	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>[12]</strong></td>
-	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>Bluemarble (Ours)</strong></td>
-</tr> -->
+
 <table style="width: 100%; word-wrap: normal; text-align: center;" borded="1" border-collapse="collapse">
 <tr>
 <td style="column-width: 20\%"><strong>Sample index</strong></td>
