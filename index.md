@@ -1,12 +1,14 @@
 # Bluemarble
 
-### Submitted to ICASSP 2024 (paper number: 7835)
+### Submitted to Signal Processing Letters (SPL-38529-2024)
 
 ## Abstract
 
 <img src='architecture.png'>
 
 In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) system that synthesizes high-quality speech from articulatory recordings. Conventional ATS approaches are only available for high-resource datasets, which require parallel articulatory and speech signal pairs for network training. These approaches often treat acoustic feature estimation as a regression task, which can pose challenges in accurately mapping complex latent features to targets. We address this task by utilizing a finite learned codebook to limit the size of the uncertainty space.  Our model learns a mapping from electromagnetic articulography (EMA) signals to discrete speech tokens from a pretrained encoder-decoder model. Then, a decoder network utilizes the discrete EMA tokens to predict acoustic features, which are fed into a neural vocoder to synthesize speech. Experimental results show that our approach outperforms existing state-of-the-art methods in both qualitative and quantitative assessments. 
+
+## Sample
 
 [10]: "An improved model for voicing silent speech" in ACL, 2021 <br>
 [11]: “Deep speech synthesis from articulatory representations” in INTERSPEECH, 2022 <br>
