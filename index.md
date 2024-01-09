@@ -66,6 +66,7 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
 <td style="column-width: 20\%"><strong>38</strong></td>
 </tr>
 <tr>
+<td style="column-width: 20\%"><strong>Reference</strong></td>
  <td><audio controls><source src='./demo_sample/'M01_B05_S09_R01_N_target.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'F01_B05_S29_R02_N_target.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'M03_B03_S38_R01_N_target.wav></audio></td>
@@ -105,7 +106,9 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
  <td><audio controls><source src='./demo_sample/'F01_B06_S34_R01_N_target.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'F01_B05_S54_R01_N_target.wav></audio></td>
 </tr>
+
 <tr>
+<td style="column-width: 20\%"><strong>[10]</strong></td>
  <td><audio controls><source src='./demo_sample/'F03_B02_S35_R01_F_base.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'F04_B01_S26_R01_F_base.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'M01_B01_S43_R01_N_base.wav></audio></td>
@@ -146,6 +149,7 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
  <td><audio controls><source src='./demo_sample/'M04_B01_S53_R01_N_base.wav></audio></td>
 </tr>
 <tr>
+<td style="column-width: 20\%"><strong>[11]</strong></td>
  <td><audio controls><source src='./demo_sample/'F01_B05_S29_R02_N_deep.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'M02_B01_S51_R01_N_deep.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'F04_B05_S12_R01_F_deep.wav></audio></td>
@@ -186,6 +190,7 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
  <td><audio controls><source src='./demo_sample/'F01_B04_S54_R01_N_deep.wav></audio></td>
 </tr>
 <tr>
+<td style="column-width: 20\%"><strong>[12]</strong></td>
  <td><audio controls><source src='./demo_sample/'M01_B05_S09_R01_N_msota.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'F02_B06_S26_R01_F_msota.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'M02_B05_S02_R01_N_msota.wav></audio></td>
@@ -226,6 +231,7 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
  <td><audio controls><source src='./demo_sample/'M03_B03_S24_R01_F_msota.wav></audio></td>
 </tr>
 <tr>
+<td style="column-width: 20\%"><strong>Bluemarble (Ours)</strong></td>
  <td><audio controls><source src='./demo_sample/'M01_B02_S51_R01_F_recon.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'F04_B07_S60_R01_N_recon.wav></audio></td>
  <td><audio controls><source src='./demo_sample/'F03_B02_S02_R01_N_recon.wav></audio></td>
