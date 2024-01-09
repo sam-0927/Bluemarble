@@ -15,14 +15,23 @@ In this paper, we introduce BlueMarble, a neural articulation-to-speech (ATS) sy
 [12]: “Style modeling for multispeaker articulation-to-speech” in ICASSP, 2023 <br>
 
 <!-- <audio controls><source src='./demo_sample/F01_B02_S60_R02_N.wav'></audio> -->
-<table style="width: auto; table-layout: fixed; word-wrap: normal; text-align: center;" borded="1" border-collapse="collapse">
+<!-- <table style="width: auto; table-layout: fixed; word-wrap: normal; text-align: center;" borded="1" border-collapse="collapse"> 
 <tr>
   <td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>Reference</strong></td>
 	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>[10]</strong></td>
 	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>[11]</strong></td>
 	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>[12]</strong></td>
 	<td style="column-width: 300px; padding-left: 10px; padding-right: 10px"><strong>Bluemarble (Ours)</strong></td>
+</tr> -->
+<table style="width: 100%; table-layout: fixed; word-wrap: normal; text-align: center;" borded="1" border-collapse="collapse">
+<tr>
+  <td style="column-width: 20%"><strong>Reference</strong></td>
+	<td style="column-width: 20%"><strong>[10]</strong></td>
+	<td style="column-width: 20%"><strong>[11]</strong></td>
+	<td style="column-width: 20%"><strong>[12]</strong></td>
+	<td style="column-width: 20%"><strong>Bluemarble (Ours)</strong></td>
 </tr>
+	
 <tr>
   <td><audio controls><source src='./demo_sample/F01_B02_S60_R02_N_target.wav'></audio></td>
   <td><audio controls><source src='./demo_sample/F01_B02_S60_R02_N_base.wav'></audio></td>
