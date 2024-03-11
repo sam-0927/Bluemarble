@@ -1,6 +1,6 @@
 # Bluemarble
 
-### Submitted to Signal Processing Letters (SPL-38529-2024)
+### Submitted to EUSIPCO (Paper number: 1161)
 
 ## Abstract
 
