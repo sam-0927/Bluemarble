@@ -1,6 +1,4 @@
-# Bluemarble
-
-### Submitted to EUSIPCO (Paper number: 1161)
+# Bluemarble: Bridging Latent Uncertainty in \\Articulatory-to-Speech Synthesis with a \\Learned Codebook
 
 ## Abstract
 
