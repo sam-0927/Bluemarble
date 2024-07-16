@@ -1,4 +1,4 @@
-# Bluemarble: Bridging Latent Uncertainty in \\Articulatory-to-Speech Synthesis with a \\Learned Codebook
+# Bluemarble: Bridging Latent Uncertainty in Articulatory-to-Speech Synthesis with a Learned Codebook
 
 ## Abstract
 
